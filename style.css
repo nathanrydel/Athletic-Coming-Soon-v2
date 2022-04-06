@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'AdiHaus';
+  src: url('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AdiHaus";
+  src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  min-width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  font-family: AdiHaus;
+}
+
+body {
+  background: url('https://assets.codepen.io/6060109/waves.png');
+  background-size: cover;
+  display: flex;
+}
+
+h2, p {
+  margin: 0;
+}
+
+h2 {
+  font-size: 48px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 28px;
+  margin: 20px 0 40px;
+  color: #333333;
+}
+
+form {
+  display: flex;
+}
+
+h2.blue {
+  color: #2F80ED;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+h2.grey {
+  color: #423A3A;
+}
+
+.main-container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+#logo {
+  margin: 15px auto;
+  display: block;
+}
+
+#hero-mobile {
+  background: url("https://assets.codepen.io/6060109/mobile-shoes.jpg") no-repeat right center;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+}
+
+.all-content-container {
+  padding: 20px 30px;
+}
+
+.text-content-container {
+  width: 100%;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 75%;
+  padding: 0 20px;
+  height: 50px;
+}
+
+input[type="submit"] {
+  width: 20%;
+  height: 50px;
+  background: rgb(124, 124, 124);
+  background: linear-gradient(90deg, rgba(124,124,124,1) 0%, rgba(43,40,40,1) 100%);
+  font-weight: 400;
+  font-size: 32px;
+  color: white;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+#hero-desktop {
+  display: none;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+  h2 {
+    font-size: 64px;
+  }
+  
+  .main-container {
+    width: 50%;
+  }
+  
+  .text-content-container {
+    text-align: left;
+  }
+  
+  #hero-mobile{
+    display: none;
+  }  
+  
+  #logo {
+    margin: 30px 30px 100px;
+    display: block;
+  }
+  
+  #hero-desktop {
+    display: block;
+    width: 50%;
+    background: url('https://assets.codepen.io/6060109/shoes.png');
+    background-size: cover;
+  }
+
+}
